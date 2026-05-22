@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumaini collection</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<!-- style -->
+<style>
+    body img:hover {
+        transform: scale(1.2);
+        transition: 2s;
+        background-color: rgba(14, 228, 228, 0.678);
+        text-align: center;
+        text-shadow: 0 0 10px rgb(214, 13, 13);
+    }
+
+    .Beddings img {
+        height: 280px;
+    }
+
+    .phones img {
+        height: 280px;
+    }
+
+    .footericons a {
+        text-decoration: none;
+    }
+
+    .prevbtn {
+        height: 50px;
+        width: 40px;
+        align-self: center;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .nextbtn {
+        height: 50px;
+        width: 40px;
+        align-self: center;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .indicator {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <!-- nav section starts below-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fw-bold fs-4">
+                <img src="./images/shopping-cart.gif" alt="shopping-cart" height="50px width50px" class="rounded">
+                <span class="text-primary">Tumaini</span>Collection
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarcollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="./index.html" class="nav-link active">Home</a>
+                    <a href="./phones.html" class="nav-link">Phones</a>
+                    <a href="./bedding.html" class="nav-link ">Beddings</a>
+                    <a href="./Fashion.html" class="nav-link ">Fashion</a>
+                    <a href="./Aboutus.html" class="nav-link ">About Us</a>
+                    <a href="#" class="nav-link position-relative ms-3">
+                        <i class="bi bi-cart3 fs-5 text-light"></i>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-14">3</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- carousel start here -->
+    <section class="container-fluid my-3">
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" id="mycarousel">
+            <!-- indicators -->
+            <div class="carousel-indicators indicators">
+                <button class="active" data-bs-target="#mycarousel" data-bs-slide-to="0"></button>
+                <button data-bs-target="#mycarousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#mycarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- carousel inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/slide1.jpg" alt="slide1" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/slide2.jpg" alt="slide2" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/slide4.jpg" alt="slide3" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- carousel controls -->
+            <button class="carousel-control-prev  prevbtn" data-bs-target="#mycarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon "></span>
+            </button>
+
+            <button class="carousel-control-next nextbtn" data-bs-target="#mycarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon "></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- section 3 strats here -->
+    <section class="row container-fluid">
+        <div class="col-md-3">
+            <img src="./images/advert.jpg" alt="" class="w-100">
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="./images/alionskettle.jpg" alt="aloons kettle" height="230px">
+            <h6>Alion kettle</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ut delectus tenetur illo enim quia
+                minus sunt nesciunt officiis fugiat.</p>
+            <b class="text-warning">Ksh 2,100</b><br>
+            <span class="badge bg-danger">5% off</span><br>
+        </div>
+
+
+        <div class="col-md-3 text-center">
+            <img src="./images/Mika2slicetoaster.png" alt="aloons kettle" height="230px">
+            <h6>Mika Slicetaoaster</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ut delectus tenetur illo enim quia
+                minus sunt nesciunt officiis fugiat.</p>
+            <b class="text-warning">Ksh 4,100</b><br>
+            <span class="badge bg-danger">10% off</span><br>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <img src="./images/cooker.jpg" alt="aloons kettle" height="230px">
+            <h6>Pro cooker</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ut delectus tenetur illo enim quia
+                minus sunt nesciunt officiis fugiat.</p>
+            <b class="text-warning">Ksh 12,100</b><br>
+            <span class="badge bg-danger">10% off</span><br>
+        </div>
+    </section>
+    <!-- section 3 ends here -->
+
+    <!-- section 4 strarts here -->
+    <section class="row container-fluid my-3">
+        <div class="col-md-6">
+            <img src="./images/advert1.jpg" alt="advert1" class="w-100">
+        </div>
+
+        <div class="col-md-6">
+            <img src="./images/advert2.jpg" alt="advert2" class="w-100">
+        </div>
+    </section>
+    <!-- section 4 ends here -->
+    <br>
+
+    <!-- section 5 strarts here -->
+    <h3>Beddings</h3>
+    <section class="row container-fluid Beddings">
+        <div class="col-md-3">
+            <img src="./images/bed1.jpg" alt="advert1" class="w-100">
+            <h6>Foral bedding</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio repellat alias iure voluptate
+                blanditiis saepe eum deleniti veritatis facilis.</p>
+            <b class="text-warning">ksh 10000</b><br>
+            <span class="badge bg-danger">15% off</span>
+        </div>
+
+        <div class="col-md-3">
+            <img src="./images/bed2.jpg" alt="duvet" class="w-100">
+            <h6>White Premium</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio repellat alias iure voluptate
+                blanditiis saepe eum deleniti veritatis facilis.</p>
+            <b class="text-warning">ksh 3000</b><br>
+            <span class="badge bg-danger">15% off</span>
+        </div>
+
+        <div class="col-md-3">
+            <img src="./images/bed3.jpg" alt="advert2" class="w-100">
+            <h6>Plain double sided</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio repellat alias iure voluptate
+                blanditiis saepe eum deleniti veritatis facilis.</p>
+            <b class="text-warning">ksh 2300</b><br>
+            <span class="badge bg-danger">5% off</span>
+        </div>
+
+        <div class="col-md-3">
+            <img src="./images/bed4.jpeg" alt="advert2" class="w-100">
+            <h6>Binded quality</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio repellat alias iure voluptate
+                blanditiis saepe eum deleniti veritatis facilis.</p>
+            <b class="text-warning">ksh 4000</b><br>
+            <span class="badge bg-danger">20% off</span>
+        </div>
+    </section>
+    <!-- section 5 ends here -->
+    <br>
+
+    <!-- section 6 starts here -->
+    <h3>Smart Phone</h3>
+    <section class="row container-fluid phones">
+        <div class="col-md-4 text">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h6>SAMSUNG Galaxy A035</h6>
+                </div>
+
+                <div class="card-body">
+                    <img src="./images/phone1.jpg" alt="phone1">
+                </div>
+
+                <div class="card-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat neque explicabo officiis,
+                        laboriosam et?</p>
+                    <b class="text-warning">ksh 4000</b><br>
+                    <span class="badge bg-danger">20% off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 text">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h6>Iphone17 Pro Max</h6>
+                </div>
+
+                <div class="card-body">
+                    <img src="./images/phone2.jpg" alt="phone2">
+                </div>
+
+                <div class="card-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat neque explicabo officiis,
+                        laboriosam et?</p>
+                    <b class="text-warning">ksh 6000</b><br>
+                    <span class="badge bg-danger">10% off</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 text">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h6>Itel</h6>
+                </div>
+
+                <div class="card-body">
+                    <img src="./images/phone3.jpg" alt="phone3">
+                </div>
+
+                <div class="card-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat neque explicabo officiis,
+                        laboriosam et?</p>
+                    <b class="text-warning">ksh 5000</b><br>
+                    <span class="badge bg-danger">10% off</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- section 6 ends here -->
+
+    <!-- section 7 starts here -->
+    <section class=" bg-warning ">
+        <div class="row">
+            <div class="col-md-4 text-center text-light">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reprehenderit autem, dolorum possimus
+                    hic deleniti?</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed consequuntur impedit voluptate,
+                    sapiente voluptates autem necessitatibus veniam obcaecati nulla rem.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="\text-light text-center">Contact Us</h5>
+                <form action="">
+                    <label for="" class="form-label fw-bold">Email Address</label>
+                </form>
+                <input type="email" placeholder="Name@Example.com" class="form-control">
+
+                <label for="" class="form-label fw-bold">Comment</label>
+                <textarea name="" id="" placeholder="type here...." rows="4" class="form-control"></textarea> <br>
+                <button class="btn btn-outline-danger">Send Message</button>
+            </div>
+
+            <div class="col-md-4 footeicons">
+                <h5 class="text-center text-light">Stay Connected</h5>
+
+                <div class="text-center footericon my-2">
+
+                    <a href="" target="_blank">
+                        <img src="./images/x.png" alt="xicon">
+                    </a>
+
+                    <a href="https://www.facebook.com/two_step_verification/authentication/?encrypted_context=AWRxsdI59X60loGUa5IANW2yh7mp8eSAjHT4vNR20FD6FHTJgxzE8wJa5pfxxq2iyX68zeXNmsxBEKfCi3aiq85JtpyL6vCDTDROjmuNItf2_aNKa_-7DKOsYH1BR0wutPEbUqlmF1IM39PEXxo84K4ImICFNCVrSy4QpNGaIliWQdMXxmIIyV7M_Zy80CgduW8YzgOOqubMBGzUtcjVJmn3fHl5K9mTURuUsGiYlYcRe_qD3oRyxxmTo1ghLPvl7yUzgvulFCmb8U-NPobBHkuYjK6EKpjNyAGBPeECThAPqGeeL5E2nTjPkRC3BC4Wk8ATQvr8Fl9wwaqOp-B32Vq5WDLF3Qkg0xgHvtw9yAgRpnlulIT6DpJQHhnDaAzJwCLe_oKihjilbN37t7IFS69OBeVMV3DryMPnLCupsvclBJRmH8-n0fltocWBwVfX2f0zxmQruKhCvhOHiChTfPtq32p9h3ATv79CPxCDEtRYog4P_8j8zSLNeMki0KBD5eXaO4roQqnuQKLTQnpDjxDRqUdivDKHd_Y5747AzoukkGEt1pyTxHmBavChXpVVqLSgblmdM4hwVEVHkm__Qxid82_W2q6YQwvBFDzqLXjTe9frT3bgtvYElMtmOvYD8MEfby-XZPXUfUIOiZX7zORWGuZlqZsflIACToQMNHcLmZqyQ-wMtl9qeWheEqdzhjkSl7oRdUBsGZ4luKLGyVvGEBEcQrAQuU59iCmRkkob10ceXiT7HQTD1zf6xQMGd9TT_HXOSuFzBc_qLS08X4pfOfuURyFoZKrxkWhQLwcoWAyo7CPCmmmzlA7ahyd8IRLhI5xN7x5-F_am8rEXMlKt-ygYlg1TGQuM2MTx6yH_jM2C5vCw_aU1B2knR_Bi2oS9lLwndvI3z28-0Csu4Rp2pZP7GTe9Lo7ez8AvIGv4GEHqZ26li35dbV8aHfjJUFikTyvt-dXmzIRvxvJW4z9q9qD_OC60lbJngRi3TzUY7iAVNuY4_grsBTc3tIA-2h1RCSRf0j3fdEUYbNvTzPLH-1TNeO3NYHEGb0MxZR5qv6hzABsFjeMPPjg37vqG4KlqGz9P5_WgZDASev0hIFWhqZjZ5qTSuAfeXWaUefPeLZayIXOGdauZYnRTVDqGX1TMihl4eEzHSREw7Zqa_4hKxrZmuvE1h7vocc-2X4wcrUptBV7-bL36yQ5XarPcKhCr1HHcB2HuT79ixvEINzITwI_oX2H2hFRAWHN0rOGjy3DFaJsns9c0VQTHVkIVWMpZaWTFqO2lMCStDczTI3V9d6U3dtd6bbQqTNE2eT4Shwn5WdZGn3KKIKnl-kbQr7TZqk8eScbaKAEo-v2EI-t4Is9Gvcuf92fx2qxv1Ow&flow=pre_authentication&next"
+                        target="_blank">
+                        <img src="./images/fb.png" alt="fbicon">
+                    </a>
+
+                    <a href="https://www.instagram.com/accounts/onetap/" target="_blank">
+                        <img src="./images/in.png" alt="igicon">
+                    </a>
+
+                </div>
+                <br>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, voluptatibus sit quos nihil minus
+                    pariatur vitae ad deserunt molestias minima architecto, corporis, obcaecati quae quia similique? Eos
+                    alias dolores error!</p>
+            </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <script src="./dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
